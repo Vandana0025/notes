@@ -1,8 +1,8 @@
 [variables]
-NODE_VERSION = "20"
+NODE_VERSION = "22"
 
 [phases.install]
-cmds = ["npm install"]
+cmds = ["rm -f package-lock.json", "npm install"]
 
 [phases.build]
 cmds = ["npm run build"]
