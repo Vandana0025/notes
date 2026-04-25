@@ -1,8 +1,0 @@
-[variables]
-NODE_VERSION = "22"
-
-[phases.install]
-cmds = ["rm -rf package-lock.json node_modules", "npm install --cache /tmp/npm-fresh"]
-
-[phases.build]
-cmds = ["npm run build"]
